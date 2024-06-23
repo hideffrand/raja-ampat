@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/layouts.min.css" />
+    <link rel="stylesheet" href="./styles/components.min.css" />
+    <link rel="stylesheet" href="./styles/atoms.min.css" />
+    <link rel="stylesheet" href="./styles/responsive-mobile.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <title>Plan Your Trip - Explore Raja Ampat</title>
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <a href="index.html">
+          <img
+            src="./assets/logo.webp"
+            alt="Explore visit Raja Ampat"
+            id="logo"
+          />
+        </a>
+        <span>
+          <div class="links">
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="guides.html">Guides</a>
+          </div>
+        </span>
+        <div class="buttons">
+          <a href="plan-your-trip.html" class="cta-button">
+            <ion-icon name="arrow-forward"></ion-icon>
+            PLAN YOUR TRIP
+          </a>
+        </div>
+        <div class="menu"><ion-icon name="menu"></ion-icon></div>
+      </div>
+    </nav>
+
+    <div class="side-bar">
+      <span>
+        <a href="index.html">
+          <img
+            src="./assets/logo.webp"
+            alt="Explore visit Raja Ampat"
+            id="logo"
+          />
+        </a>
+        <ion-icon
+          class="sidebar-close-btn"
+          name="close-circle-outline"
+        ></ion-icon>
+      </span>
+      <div class="links">
+        <a href="index.html"> Home</a>
+        <a href="discover.html"> Discover</a>
+        <a href="guides.html"> Guides</a>
+      </div>
+      <div class="buttons">
+        <a href="plan-your-trip.html" class="cta-button">
+          <ion-icon name="arrow-forward"></ion-icon>
+          PLAN YOUR TRIP
+        </a>
+        
+        <div class="socials">
+          <ion-icon name="logo-instagram"></ion-icon>
+          <ion-icon name="logo-facebook"></ion-icon>
+          <ion-icon name="logo-youtube"></ion-icon>
+        </div>
+      </div>
+    </div>
+
+    <div class="wishlist-card">
+      <span>
+        <h1>Your Wishlist</h1>
+        <ion-icon
+          class="wishlist-close-btn"
+          name="close-circle-outline"
+        ></ion-icon>
+      </span>
+      <ul></ul>
+    </div>
+
+    <section style="height: 10vh"></section>
+    <section id="section-planner">
+      <div class="container">
+        <form action="">
+          <img src="./assets/views/waigeo.webp" alt="" />
+          <br />
+          <div class="headline-container">
+            <h1 class="headline">Plan Your Trip</h1>
+          </div>
+          <p>
+            Exicted to visit Raja Ampat? Let us help you to plan your journey!
+          </p>
+          <br />
+          <label for="select-country">Where you from:</label>
+          <select id="select-country">
+            <option selected value="">Choose country</option>
+          </select>
+          <br />
+          <p class="departure-title">
+            <ion-icon name="airplane"></ion-icon> Departure:
+          </p>
+          <p class="departure">...</p>
+          <br />
+          <label for="select-flight-type">Flight type:</label>
+          <select id="select-flight-type">
+            <option selected>Choose</option>
+            <option value="direct">Direct</option>
+            <option value="indirect">Indirect (lower price)</option>
+          </select>
+          <br />
+        </form>
+
+        <aside>
+          <!-- <p>We've just made your trip plan!</p> -->
+          <div class="result">
+            <div class="res-container">
+              <h1 id="title">Trip Plan Summary</h1>
+              <div class="divider"></div>
+              <p id="from">From:</p>
+              <p id="to">To: Raja Ampat</p>
+              <div class="divider"></div>
+              <p id="flight-schedule-title">
+                <ion-icon name="airplane"></ion-icon> Flights schedule:
+              </p>
+              <ol id="flights"></ol>
+              <div class="divider"></div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="./scripts/sidebar.js"></script>
+    <script src="./scripts/GSAP_Animations.js"></script>
+    <script src="./scripts/planner.js"></script>
+    <script src="./scripts/animation.js"></script>
+    <script src="./scripts/wishlist.js"></script>
+  </body>
+</html>

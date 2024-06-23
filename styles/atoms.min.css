@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --orange: orange;
+  --blue: #0d75ff;
+  --light-blue: #0d75ff;
+  --dark-blue: #00265a;
+
+  --green: #68b03d;
+  --light-green: #5cbe22;
+  --dark-green: #3f6b25;
+  --white: rgb(250, 250, 250);
+
+  --shadow: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03))
+    drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
+  font-size: 16px;
+}
+
+.image-properties,
+.image-properties-header {
+  font-size: 0.75rem;
+  position: absolute;
+  bottom: 0;
+  margin: 0 24px 24px 0;
+  right: 0;
+}
+.image-properties-header {
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  border: none;
+  color: black;
+  font-size: 1rem;
+  /* border: 1px solid red; */
+}
+
+.blue-text {
+  color: var(--blue);
+  font-size: 2.5rem;
+}
+
+.green-text {
+  color: var(--green);
+  font-size: 2.5rem;
+}
+
+svg {
+  width: 100%;
+  object-fit: contain;
+  height: fit-content;
+}
+
+svg .island-name {
+  fill: black;
+  opacity: 0.8;
+}
+
+svg path,
+svg path {
+  fill: rgb(225, 225, 225);
+  transition: fill 0.2s;
+}
+
+/* svg .waigeo,
+svg .salawati,
+svg .misool,
+svg .batanta {
+  fill: var(--light-green);
+} */
+
+svg .waigeo:hover,
+svg .salawati:hover,
+svg .misool:hover,
+svg .batanta:hover,
+svg .west-papua:hover {
+  transition: fill 0.2s;
+  cursor: pointer;
+  stroke: var(--dark-blue);
+  stroke-width: 2;
+  fill: var(--light-green);
+}
+
+svg .island {
+  fill: var(--light-green);
+}
+
+/* svg .blue-magic,
+svg .cape-kri,
+svg .manta-ridge,
+svg .mikes-point,
+svg .sardine-reef {
+  fill: red;
+  filter: var(--shadow);
+} */
+
+svg .blue-magic:hover,
+svg .cape-kri:hover,
+svg .manta-ridge:hover,
+svg .mikes-point:hover,
+svg .sardine-reef:hover {
+  stroke: black;
+  stroke-width: 2;
+}
+
+.hero-title {
+  color: rgb(255, 255, 255);
+  font-size: 7.5rem;
+  font-weight: 900;
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  filter: var(--shadow);
+  /* transform: translateY(100%); */
+}
+
+.hero-title-container {
+  overflow: hidden;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  gap: 2px;
+}
+
+.styled-icon {
+  font-size: 1.2rem;
+  padding: 0 4px;
+  color: var(--dark-blue);
+}
+
+b {
+  color: var(--dark-blue);
+}
+i {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.info-icon-danger {
+  font-size: 1.2rem;
+  color: red;
+}
+.hero-subtitle {
+  color: rgb(245, 245, 245);
+  font-size: 2rem;
+  font-weight: 400;
+  /* transform: translateY(100%); */
+}
+
+.headline {
+  font-size: 2.5rem;
+  font-weight: 600;
+  /* font-family: "Playfair Display", serif;
+  font-weight: 900; */
+  transition: 0.4s all ease-in-out;
+}
+
+.headline-container {
+  margin-bottom: 24px;
+  width: fit-content;
+  height: fit-content;
+  overflow: hidden;
+  display: flex;
+}
+
+.buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.cta-button,
+.ghost-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  gap: 6px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.cta-button {
+  color: var(--white);
+  background-color: var(--orange);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.cta-button::after {
+  content: "";
+  position: absolute;
+  background-color: var(--blue);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  transition: 0.3s;
+}
+.cta-button ion-icon {
+  color: var(--white);
+  scale: 1.2;
+  rotate: 0deg;
+  transition: 0.3s all;
+}
+.cta-button:hover ion-icon {
+  rotate: -45deg;
+  transition: 0.3s all;
+}
+.cta-button:hover::after {
+  transition: 0.3s;
+  /* background-color: var(--dark-blue); */
+  /* width: 0; */
+  filter: var(--shadow);
+}
+
+.ghost-button {
+  color: var(--dark-blue);
+  background-color: transparent;
+  border: 1px solid var(--dark-blue);
+  margin: 24px 0;
+  overflow: hidden;
+  position: relative;
+}
+.ghost-button:hover {
+  color: white;
+}
+.ghost-button ion-icon {
+  color: var(--dark-blue);
+  scale: 1.2;
+  rotate: 0deg;
+  transition: 0.3s all;
+}
+.ghost-button:hover ion-icon {
+  rotate: -45deg;
+  transition: 0.3s all;
+  color: white;
+}
+.ghost-button::after {
+  content: "";
+  position: absolute;
+  background-color: var(--dark-blue);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  transition: 0.3s;
+  transform: translateY(-105%);
+  border-radius: 50%;
+}
+.ghost-button:hover::after {
+  transition: 0.3s;
+  transform: translateY(0);
+  border-radius: 0;
+}
+
+.island-name {
+  margin: 24px 0;
+}
+.island-description {
+  margin-bottom: 24px;
+}
+
+.floating-card-dismiss {
+  font-size: 12px;
+  color: rgb(100, 100, 100);
+  margin-top: 12px;
+  text-align: center;
+  display: none;
+}
+
+.animated-anchor {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  color: var(--dark-blue);
+}
+.animated-anchor::after {
+  width: 0;
+  height: 1px;
+  content: "";
+  transition: width 0.2s ease-in-out;
+  background-color: var(--dark-blue);
+}
+.animated-anchor:hover:after {
+  transition: width 0.2s ease-in-out;
+  width: 100%;
+}
+
+#fc-close-button {
+  background-color: transparent;
+}
+#fc-close-button ion-icon {
+  font-size: 24px;
+}
+#fc-close-button ion-icon:hover {
+  color: var(--dark-blue);
+  cursor: pointer;
+}
+
+.secondary-btn {
+  font-size: 1rem;
+  padding: 8px;
+  border-radius: 4px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+.secondary-btn:hover {
+  background-color: rgb(225, 225, 225);
+}
+
+#flight-schedule-title {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+#flight-schedule-title ion-icon {
+  rotate: -45deg;
+  scale: 1.2;
+  color: rgb(25, 25, 25);
+}
+
+.citation {
+  font-size: 0.9rem;
+  color: rgb(140, 140, 140);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  text-decoration: underline;
+}
+.citation p {
+  font-size: 0.9rem;
+  color: rgb(140, 140, 140);
+}
+
+#logo {
+  width: 70px;
+  height: 70px;
+  scale: 1;
+}

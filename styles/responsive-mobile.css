@@ -1,0 +1,244 @@
+@media only screen and (max-width: 1025px) {
+  :root {
+    --padding-layout: 5dvh 6%;
+
+    --padding-x-only: 0 6%;
+    --padding-y-only: 5dvh 0;
+    --padding-left: 6%;
+    --padding-right: 6%;
+    font-size: 14px;
+  }
+  nav .container {
+    width: 80%;
+    padding: 0 6%;
+    justify-content: center;
+  }
+  nav .container .links,
+  nav .container .buttons {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    margin: 0 32px;
+  }
+
+  #section-map .container {
+    flex-direction: column;
+  }
+  #section-map .container aside,
+  #section-map .container .map-container {
+    width: 100%;
+  }
+
+  #section-planner .container {
+    flex-direction: column;
+    padding: 5vh 6%;
+  }
+  #section-planner .container form {
+    width: 100%;
+  }
+  #section-planner .container aside {
+    width: 100%;
+    padding: 0;
+  }
+
+  #section-testimonials .container {
+    padding: 10vh 6%;
+  }
+  .testi-prev-btn {
+    transform: translateX(-40%);
+    padding: 2px;
+    left: 0;
+  }
+  .testi-next-btn {
+    padding: 2px;
+    right: 0;
+    transform: translateX(40%);
+  }
+
+  #section-info .container {
+    flex-direction: column;
+    gap: 0;
+  }
+  .details-card {
+    padding: 14px;
+  }
+  .card img {
+    height: 30vh;
+  }
+
+  .container-info {
+    width: 100%;
+    padding: var(--padding-layout);
+  }
+  .section-discover {
+    flex-direction: column;
+  }
+  .tile {
+    width: 100%;
+  }
+  .tile-cover {
+    background-image: linear-gradient(to right, rgb(0, 0, 0, 0.7), transparent);
+  }
+
+  #section-culture .container .img-container {
+    height: 32vh;
+  }
+  .section-discover .text p {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  :root {
+    --padding-layout: 5dvh 6%;
+
+    --padding-x-only: 0 6%;
+    --padding-y-only: 5dvh 0;
+    --padding-left: 6%;
+    --padding-right: 6%;
+    font-size: 14px;
+  }
+
+  * {
+    font-size: 1rem;
+  }
+
+  .hero-title {
+    font-size: 4rem;
+  }
+
+  .search-hotel-btn p {
+    display: none;
+  }
+
+  .hero-subtitle {
+    font-size: 1.5rem;
+  }
+
+  .headline,
+  .blue-text {
+    font-size: 1.5rem;
+  }
+
+  .section-title .p-container {
+    padding: 0 6%;
+  }
+
+  .floating-card {
+    width: 200px;
+    transform: translateX(-100%) translateY(-100%);
+  }
+
+  #section-overview .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+
+  #section-overview .container .text {
+    width: 100%;
+    justify-content: center;
+  }
+  .facts span .number,
+  .facts span .number sup {
+    font-size: 12px;
+  }
+
+  #section-overview .container .text .facts {
+    width: 100%;
+    display: flex;
+  }
+
+  #section-overview aside {
+    width: 100%;
+  }
+
+  #section-overview aside .img-aside {
+    rotate: 0;
+  }
+
+  #section-trip .container {
+    padding: var(--padding-layout);
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  #section-culture .container .text {
+    width: 100%;
+    padding: 0;
+    transform: none;
+    padding: 32px 0;
+  }
+
+  #section-trip .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #section-trip .container .text {
+    width: 100%;
+  }
+
+  #section-trip .cards-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  @keyframes floating {
+    0% {
+      transform: translateX(-50%) translateY(-105%);
+    }
+    50% {
+      transform: translateX(-50%) translateY(-106%);
+    }
+    100% {
+      transform: translateX(-50%) translateY(-105%);
+    }
+  }
+  .floating-card-dismiss {
+    display: block;
+  }
+
+  #section-article .container {
+    flex-direction: column;
+    padding: var(--padding-layout);
+  }
+
+  .container-reverse {
+    flex-direction: column-reverse;
+    padding: var(--padding-layout);
+  }
+
+  #section-article .container .text,
+  #section-article .container .img-container {
+    width: 100%;
+  }
+
+  #globe {
+    width: 240%;
+  }
+
+  #section-manta .container {
+    flex-direction: column;
+  }
+
+  #manta {
+    width: 100%;
+    scale: 1.2;
+    transform: translateX(-24%);
+  }
+
+  #section-map-title .container {
+    padding: var(--padding-x-only);
+  }
+  #section-map-title .container p {
+    width: 100%;
+  }
+}
